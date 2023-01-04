@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300;500;700&display=swap");
+* {
+  margin: 0 !important;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 3000px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.theNav {
+  z-index: 3;
+}
+.theNav .sidebar {
+  height: 100vh;
+  width: 65px;
+  background-color: rgb(245, 245, 245);
+}
+.theNav .sidebar .logo {
+  height: 65px;
+  margin-bottom: 30px;
+}
+.theNav .sidebar .logo i {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 35px;
+}
+.theNav .sidebar .iconElement {
+  height: 55px;
+}
+.theNav .sidebar .iconElement .element {
+  transition: 0.6s;
+}
+.theNav .sidebar .iconElement .element.active {
+  border-radius: 5px;
+  background-color: orange;
+}
+.theNav .sidebar .iconElement .element.on {
+  background-color: orange;
+}
+.theNav .sidebar .iconElement .element i {
+  padding: 8px;
+  font-size: 15px;
+}
+.theNav .sidebar .iconElement .textElement {
+  position: absolute;
+  color: white;
+  background-color: orange;
+  padding: 3.5px;
+  width: 0px;
+  border-radius: 0px 50px 50px 0px;
+  text-align: end;
+  transition: 0.3s;
+}
+.theNav .sidebar .iconElement .textElement p {
+  padding: 0px 30px;
+  margin: 0;
+}
+.theNav .sidebar .iconElement .textElement.theShow {
+  width: 100px;
+  padding: 3.5px;
+  transform: translateX(60px);
+  transition: 0.3s;
+}
+.theNav .sidebar .iconElement:hover {
+  cursor: pointer;
+}
+
+.contentWrap {
+  padding-left: 65px;
+  min-height: 100vh;
+}
+.contentWrap .hightlightPage {
+  height: 500px;
+}
+.contentWrap .hightlightPage .content .hightlight {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake {
+  width: 100%;
+  height: 100%;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .image {
+  background-color: black;
+  z-index: 1;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .image img {
+  opacity: 0.6;
+  width: 120%;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo {
+  padding: 25px;
+  position: relative;
+  z-index: 2 !important;
+  color: white;
+  width: 100%;
+  height: 100% !important;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .infoTitle .infoLogo {
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  color: orange;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .infoTitle .textInfo h3 {
+  font-weight: 400;
+  font-family: "Quicksand";
+  font-size: 16px;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .infoTitle .textInfo p {
+  font-family: "Quicksand";
+  font-size: 13px;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .infoDate {
+  height: 50px;
+  margin: 20px 0px !important;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .infoDate .day p {
+  font-size: 26px;
+  font-family: "Quicksand";
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .infoDate span {
+  width: 2px;
+  height: 70%;
+  border-radius: 20px;
+  background-color: white;
+  transform: rotate(10deg);
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .infoDate .monthYear p {
+  font-family: "Quicksand";
+  font-size: 14px;
+  line-height: 15px;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .infoDate .monthYear p:nth-child(2) {
+  font-weight: 600;
+  font-size: 16px;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .timeMag {
+  color: rgb(53, 53, 53);
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .timeMag .infoTime {
+  height: 50px;
+  border-radius: 7px;
+  background-color: #F0EC57;
+  margin-right: 10px !important;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .timeMag .infoTime p {
+  line-height: 15px;
+  font-family: "Quicksand";
+  font-weight: 200;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .timeMag .infoTime p:nth-child(1) {
+  font-size: 15px;
+  font-weight: 600;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .timeMag .infoMagnitude {
+  border-radius: 7px;
+  background-color: #fff;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .timeMag .infoMagnitude p {
+  font-family: "Quicksand";
+  line-height: 15px;
+}
+.contentWrap .hightlightPage .content .hightlight .latestQuake .latestInfo .timeMag .infoMagnitude p:nth-child(1) {
+  font-size: 15px;
+  font-weight: 600;
+}
+.contentWrap .detailInfo {
+  height: 100vh !important;
+  background-color: rgb(240, 240, 240);
+  position: fixed;
+  right: 0;
+}
+.contentWrap .detailInfo .deInf {
+  color: white;
+  height: 170px;
+  background: linear-gradient(-106deg, rgba(2, 57, 73, 0.8156862745), #065b77, #024053);
+  margin: 20px 20px 30px 20px !important;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+}
+.contentWrap .detailInfo .deInf .locationTime {
+  width: 100%;
+}
+.contentWrap .detailInfo .deInf .locationTime .loc p, .contentWrap .detailInfo .deInf .locationTime .locTime p {
+  font-family: "Quicksand";
+  line-height: 18px;
+}
+.contentWrap .detailInfo .deInf .locationTime .loc p.magLoc, .contentWrap .detailInfo .deInf .locationTime .locTime p.magLoc {
+  font-size: 16px;
+}
+.contentWrap .detailInfo .deInf .locationTime .loc p.magText, .contentWrap .detailInfo .deInf .locationTime .locTime p.magText {
+  font-weight: 600;
+}
+.contentWrap .detailInfo .deInf .locMagnitude p {
+  font-family: "Quicksand";
+}
+.contentWrap .detailInfo .deInf .locMagnitude p:nth-child(1) {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.everyDetailInfo {
+  padding: 5px 15px;
+  margin: 20px !important;
+  color: white;
+  font-family: "Quicksand";
+  height: 60%;
+  overflow: scroll;
+  background: linear-gradient(-106deg, rgba(2, 57, 73, 0.8156862745), #065b77, #024053);
+  border-radius: 10px;
+}
+.everyDetailInfo .edinfo {
+  padding: 10px 8px;
+}
+.everyDetailInfo .edinfo .edinfoIcon {
+  background: rgba(7, 7, 7, 0.192);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.everyDetailInfo .edinfo .edinfoText {
+  width: 80%;
+}
+.everyDetailInfo .edinfo .edinfoText p:nth-child(1) {
+  font-size: 15px;
+  font-weight: 600;
+}
+.everyDetailInfo .edinfo .edinfoText p:nth-child(2) {
+  font-size: 13px;
+  font-family: "Poppins";
+}
+
+@media (max-width: 992px) {
+  .contentWrap .hightlightPage .content .latestQuake .detail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+  }
+  .contentWrap .hightlightPage .content .latestQuake .detail:hover {
+    cursor: pointer;
+  }
+  .contentWrap .detailInfo {
+    display: none;
+  }
+}
+.theModal .d-flex .modal-content {
+  border: none;
+}
+.theModal .d-flex .modal-content .modal-header {
+  border: none;
+}
+
+@media (max-width: 575px) {
+  .contentWrap {
+    padding-left: 0px !important;
+  }
+  .contentWrap .hightlightPage {
+    padding-top: 50px !important;
+  }
+  .contentWrap .hightlightPage .content .latestQuake .detail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+  }
+  .theNav {
+    width: 100%;
+  }
+  .theNav .sidebar {
+    width: 0px;
+    display: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 1;
+  }
+  .theNav .sidebar .iconElement .element {
+    position: unset !important;
+  }
+  .theNav .sidebar .iconElement .element i {
+    order: 2;
+  }
+  .theNav .sidebar .iconElement .textElement {
+    order: 1;
+    display: flex !important;
+    width: 100px !important;
+    position: unset;
+    background-color: transparent;
+  }
+  .theNav .sidebar .iconElement .textElement p {
+    color: black !important;
+  }
+  .theNav .sidebar .iconElement .textElement.theShow {
+    width: 0px;
+    padding: 0px;
+    transform: translateX(0px);
+    transition: 0s;
+  }
+  .theNav .sidebar.showSide {
+    opacity: 1;
+    width: 80%;
+  }
+  .theNav .buttonNav {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    z-index: 2;
+  }
+  .theNav .buttonNav #nav-icon1, .theNav .buttonNav #nav-icon2, .theNav .buttonNav #nav-icon3, .theNav .buttonNav #nav-icon4 {
+    width: 40px;
+    height: 35px;
+    position: relative;
+    margin: 20px auto;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .theNav .buttonNav #nav-icon1 span, .theNav .buttonNav #nav-icon3 span, .theNav .buttonNav #nav-icon4 span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #000000;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  .theNav .buttonNav #nav-icon1 span:nth-child(1) {
+    top: 0px;
+  }
+  .theNav .buttonNav #nav-icon1 span:nth-child(2) {
+    top: 10px;
+  }
+  .theNav .buttonNav #nav-icon1 span:nth-child(3) {
+    top: 20px;
+  }
+  .theNav .buttonNav #nav-icon1.open span:nth-child(1) {
+    top: 10px;
+    transform: rotate(135deg);
+  }
+  .theNav .buttonNav #nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  .theNav .buttonNav #nav-icon1.open span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-135deg);
+  }
+}/*# sourceMappingURL=style.css.map */
